@@ -3,7 +3,7 @@
 /**
  * main- C program that prints a line exactly using printf
  *
- *Returns 0 (Success)
+ *Return: 0 (Success)
 */
 
 int main(void)
