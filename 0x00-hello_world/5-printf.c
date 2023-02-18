@@ -1,13 +1,13 @@
 #include <stdio.h>
 
-/**main-C program that prints exactly  followed by a new line
+/**
+ * main- C program that prints a line exactly using printf
  *
- *Return (0) Success
+ *Returns 0 (Success)
 */
 
 int main(void)
-{	
+{
 	printf("with proper grammar, but the outcome is a piece of art,\n");
-	
 	return (0);
 }
