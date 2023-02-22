@@ -1,20 +1,22 @@
 #include "main.h"
 
 /**
- * main - a function that prints 10 times the alphabet, in lowercase.
- *
- * Return: Always 0.
+ * main-entry point
+ * prints the alphabet 10 times in lowercase.
+ *Return: Always 0 (success)
  */
 
-void print_alphabet_x10(void);
-
-int main(void)
+void print_alphabet_x10(void)
 {
-	char ch = 'a';
-	
-	for (ch = 'a'; ch <= 'z'; ch+10);
-	int putchar(ch);
-	int putchar('\n');
+	int i;
+	char j;
 
-	return (0);
+	for (i = 1; j <= 10; j++)
+	{
+	for (j = 97; j <= 122; j++)
+	{
+		_putchar(j);
+	}
+	_putchar('\n');
+	}
 }
