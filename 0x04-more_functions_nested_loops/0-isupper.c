@@ -15,11 +15,10 @@ int _isupper(int c)
 
 	if (isupper(ch))
 	{
-	_putchar("1");
+	return (1);
 	}
 	else
 	{
-	_putchar("0");
-	}
 	return (0);
+	}
 }
