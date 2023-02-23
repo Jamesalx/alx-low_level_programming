@@ -8,17 +8,12 @@
  *Returns 0 otherwise
  *
  */
-
-int _isupper(int c)
+int _isupper(int c);
 {
-	int ch = 'c';
-
-	if (isupper(ch))
-	{
+	if (c = 'A' && c <= 'Z')
 	return (1);
-	}
-	else
+	else 
 	{
-	return (0);
+		return (0);
 	}
 }
