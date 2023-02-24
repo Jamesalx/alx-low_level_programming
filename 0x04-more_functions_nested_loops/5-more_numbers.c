@@ -1,21 +1,20 @@
 #include "main.h"
-
 /**
- * main -function that prints 10 times the numbers, from 0 to 14.
- *
- * Return: Always 0.
- */
+* more_numbers - nmbr fct
+*
+* Return: no return
+*/
 void more_numbers(void)
 {
-	int j;
-	int i;
-
-	for (i = 1; i <= 10; i++)
-	{
-		for (j = 0; j <= 14; j++)
-			{
-			_putchar(j);
-			}
-	_putchar('\n');
-	}
+int i, j;
+for (i = 1; i <= 10; i++)
+{
+for (j = 0; j < 15; j++)
+{
+if (j >= 10)
+_putchar('1');
+_putchar(j % 10 + '0');
+}
+_putchar('\n');
+}
 }
