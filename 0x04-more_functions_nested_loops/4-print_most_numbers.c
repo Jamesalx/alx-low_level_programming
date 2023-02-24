@@ -1,24 +1,21 @@
 #include "main.h"
 
 /**
- * main -a function that prints the numbers, from 0 to 9, followed by a new line.
+ * main -a function that prints the numbers.
  *
  * Return: Always 0.
  */
 
 void print_most_numbers(void)
 {
-	int i;
-	int j;
+	int i = 0;
 
-	for (i = 0; i <= 9; i++)
+	if ( i != '2' && i != '4'; i++)
 	{
-		_putchar(i);
+	_putchar(i);
 	}
-	for (j != '2' && j != '4');
-	{
-		_putchar(j);
-	}
+	_putchar('\n');
 }
+
 
 
