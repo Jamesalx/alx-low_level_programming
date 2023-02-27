@@ -10,10 +10,9 @@
 
 char *_strcpy(char *dest, char *src)
 {
-	src[10] = "123456789\0"
-	char dest[15];
-	
+	char *src[10] = "123456789\0"
+	char *dest[15];
 	strcpy(dest, src);
-	putchar("dest: %s\n", dest);
+	_putchar("dest: %s\n", dest);
 	return (0);	
 }
