@@ -4,13 +4,15 @@
 /**
  * main - function that prints half of a string, followed by a new line. 
  *
- * Return: Always 0.
+ * Return:void.
  */
 
 void puts_half(char *str)
 {
-	char str;
+	int i = 0;
+	int j;
 
-	str = "Hello world";
+	while(str[j] !=
+	str = 
 
 }
