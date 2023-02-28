@@ -4,18 +4,23 @@
 /**
  * main -function that prints every other character of a string
  * starting with the first character
- * followed by a new line.
- *
- * Return: Always 0.
+ *@str: string to be printed
+ * Return: void.
  */
 
-void puts2(char *str);
+void puts2(char *str)
 {
-	char str = "Hello world";	
-	
-	for (i = 0;i < strlen(str); i += 2);
+	int i;
+	int j = 0;
+
+	while (str[j] != '\0') 
 	{
-		putchar(str[i]);
+	j++;
 	}
-	return (0);
+
+	for (i = 0; i < j; i += 2)
+	{
+		_putchar(str[i]);
+	}
+	_putchar('\n');
 }
