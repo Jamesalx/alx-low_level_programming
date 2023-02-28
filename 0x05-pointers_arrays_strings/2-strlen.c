@@ -3,19 +3,17 @@
 #include <string.h>
 
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * main:returns the length of a string.
+ *@*s:string whose length is needed
+ *@strlen: returns the length of a string
+ * Return:length of @*s
  */
 
 int _strlen(char *s)
 {
-	char *str;
-	int len;
+	char *s[20];
 
-	str = "Hello Strlen";
-	len = strlen(str);
-	_putchar("strlen(str): %d\n", len);
-	
+	printf("Length of string *s = %zu \n", strlen(*s));
+
 	return (0);
 }
