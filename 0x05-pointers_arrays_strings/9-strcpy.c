@@ -3,16 +3,22 @@
 #include <string.h>
 
 /**
- * main - check the code
+ * _strcpy - copies string pointed to by src
+ * @dest:points to the buffer
+ * @src:string
  *
- * Return: Always 0.
+ * Return:pointer to dest
  */
 
 char *_strcpy(char *dest, char *src)
 {
-	char *src[10] = "123456789\0"
-	char *dest[15];
-	strcpy(dest, src);
-	_putchar("dest: %s\n", dest);
-	return (0);	
+	int i;
+
+	for (i = 0; src[i] != '\0'; i++)
+	{
+	dest[i] = src[i];
+	}
+	dest[i++] = '\0';
+
+	return (dest);
 }
