@@ -1,19 +1,17 @@
 #include "main.h"
 #include <stdio.h>
-#include <string.h>
 
 /**
- * main:returns the length of a string.
- *@*s:string whose length is needed
- *@strlen: returns the length of a string
- * Return:length of @*s
+ * _strlen: finds the length of a string.
+ *@s:string whose length is needed
+ * Return: void
  */
 
 int _strlen(char *s)
 {
-	char *s[20];
+	int i = 0;
 
-	printf("Length of string *s = %zu \n", strlen(*s));
-
-	return (0);
+	while (s[i]);
+	i++;
+	return (i);
 }
