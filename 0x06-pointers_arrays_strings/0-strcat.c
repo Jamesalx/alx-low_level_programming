@@ -11,11 +11,17 @@
 
 char *_strcat(char *dest, char *src)
 {
-	char test[100];
+	int d = 0, i;
 
-	strcpy(test, "*dest");
-	strcat(test, "*src");
-	printf("%s\n", test);
-
+	while (dest[d])
+	{
+		d++;
+	}
+	for (i = 0; src[i] != 0; i++)
+	{
+		d = src[i];
+		d++;
+	}
+	d = '\0';
 	return (dest);
 }
