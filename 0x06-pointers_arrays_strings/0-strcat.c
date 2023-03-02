@@ -11,13 +11,11 @@
 
 char *_strcat(char *dest, char *src)
 {
-	src = "New";
-	dest = "World";
-	char temp[100];
+	char test[100];
 
-	strcpy(temp, "New");
-	strcat(temp, "World");
-	printf("%s\n", temp);
+	strcpy(test, "*dest");
+	strcat(test, "*src");
+	printf("%s\n", test);
 
 	return (dest);
 }
