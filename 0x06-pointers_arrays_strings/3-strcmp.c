@@ -4,24 +4,23 @@
 
 /**
 * _strcmp - to compare two strings
-*@*s1:string to compare
-*@*s2:string to compare
+*@s1:string to compare
+*@s2:string to compare
 * Return: 0.
 */
 
 int _strcmp(char *s1, char *s2)
 {
-	char *s1[20], *s2[20];
-	int value;
+	int i;
 
-	printf("string 1: %d\n", s1);
-	printf("string 2: %d\n", s2);
-	value = strcmp(*s1, *s2);
-	if (value == 0)
+	i = 0;
+	while (s1[i] != '\0' && s2[i] != '\0')
 	{
-		printf("same");
+		if (s1[i] != s2[i])
+		{
+			(s1[i] - s2[i]);
+		}
+		i++;
 	}
-	else
-		printf("not same");
 	return (0);
 }
