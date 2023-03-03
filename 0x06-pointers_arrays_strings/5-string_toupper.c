@@ -1,23 +1,24 @@
 #include "main.h"
 #include <stdio.h>
 #include <string.h>
-#include <ctype.h>
 
 /**
-* toupper -  function changes all lowercase letters of a string to uppercase
-*@strlen:calculates the length of a given string
-*
-* Return: Always 0.
+*function changes all lowercase letters of a string to uppercase
+*strlen:calculates the length of a given string
+*@n: pointer
+* Return:n
 */
 
 char *string_toupper(char *)
 {
-	char s[] = "look me up"
-	int length = strlen(s);
+	int i;
 
-	for (int i = 0; i < length; i++)
-	s[i] = toupper(s[i]);
-        printf("%s\n", s);
-	
-	return (0);
+	i = 0;
+	while (n[i] != '\0')
+	{
+		if (n[i] >= 'a' && n[i] <= 'z')
+			n[i] = n[i] - 32;
+		i++;
+	}
+	return (n);
 }
