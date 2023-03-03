@@ -14,16 +14,21 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	char src[50] = "the source";
-	char dest[50] = "the dest";
-	char 2dest[50] = "second dest";
+	int i;
+	int j;
 
-	strcat(dest, src);
-	printf("%s\n", dest);
-	printf("%s\n", 2dest);
-
-	strncat(2dest, src, n);
-	printf("%s\n", 2dest);
-
+	i = 0;
+	while (dest[i] != '\0')
+	{
+		i++;
+	}
+	j = 0;
+	while (j < n && src[j] != '\0')
+	{
+		dest[i] = src[j];
+		i++;
+		j++;
+	}
+	dest[i] = '\0';
 	return (0);
 }
