@@ -10,12 +10,18 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char haystack[25] = "Pineapple";
-	char needle[20] = "apple";
-	char ret;
+	for (;  *haystack != '\0'; haystack++)
+	{
+	char *one = haystack;
+	char *two = needle;
 
-	ret = strstr(haystack, needle);
-
-	printf ("substring is: %d\n", ret);
-	return (0);
+	while (*one == *two && *two != '\0')
+	{
+		one++;
+		two++;
+	}
+	if (*two == '\0')
+	return (haystack);
+	}
+	return ('\0');
 }
