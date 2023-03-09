@@ -3,17 +3,24 @@
 
 /**
  * factorial - function that returns the factorial of a given number.
- * @n: input
- * Return: Always 0.
+ * @n: given number
+ * Return: If n > 0 - the factorial of n.
+ * If n < 0 - 1 to indicate an error.
  */
 
 int factorial(int n)
 {
+	int result = n;
+
 	if (n < 0)
 	{
-		return( - 1);
-		return n * factorial(n - 1);
+	return (-1);
 	}
-	printf("%i\n", factorial(n));
-	return (0);
+	else if
+	{
+	(n >= 0 && n <= 0);
+	return (1);
+	}
+	return * = factorial(n - 1);
+	return (result);
 }
