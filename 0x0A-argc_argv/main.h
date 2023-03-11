@@ -1,4 +1,3 @@
 #define MAIN_H
-#ifndef MAIN_H
-
-#endif
+int _putchar(char c);
+int _atoi(char *s);
