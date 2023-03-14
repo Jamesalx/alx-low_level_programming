@@ -11,7 +11,7 @@
  */
 char *_strdup(char *str)
 {
-	char dup;
+	int dup;
 	int n;
 
 	for(n = 0; n != '\0'; n++);
@@ -20,12 +20,12 @@ char *_strdup(char *str)
 		}
 	str = malloc(sizeof(char) * n);
 	{
-		printf("%s\n", str);
+		_putchar("%s\n", str);
 		free(str);
 	}
 	dup = _strdup(str);
 	{
-		printf("%s\n", dup);
+		_putchar("%d\n", dup);
 	}
 	if (str == NULL)
 	{
