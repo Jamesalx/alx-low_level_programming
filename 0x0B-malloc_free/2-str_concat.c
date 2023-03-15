@@ -2,35 +2,44 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-/*
- *str_concat - function to join two strings
- *@i: string to a newly allocated space in memory
- *@j: source string
- *Return:(NULL)
+/**
+ * str_concat - get ends of input and add together for size
+ * @s1: input one to concat
+ * @s2: input two to concat
+ * Return: concat of s1 and s2
  */
+
 char *str_concat(char *s1, char *s2)
 {
-	int i;
-	int j;
-	char s;
+	char *conct;
+	int i, ci;
 
-	while (i < '\0')
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		s2 = "";
+
+	i = ci = 0;
+	while (s1[i] != '\0')
+		i++;
+	while (s2[ci] != '\0')
+		ci++;
+	conct = malloc(sizeof(char) * (i + ci + 1));
+
+	if (conct == NULL)
+		return (NULL);
+	i = ci = 0;
+	while (s1[i] != '\0')
 	{
-		printf ("%d\n", i);      
+		conct[i] = s1[i];
 		i++;
 	}
-	while (j < '\0')
+
+	while (s2[ci] != '\0')
 	{
-		printf ("d\n", j);
-		j++;
+		conct[i] = s2[ci];
+		i++, ci++;
 	}
-	str_concat (s[i], s[j]);
-	{
-		printf ("%s\n", s[i]);
-	}
-	if (s1 > '\0')
-	{
-		printf (s1[0] = '\0');
-	}
-	return(NULL);
+	conct[i] = '\0';
+	return (conct);
 }
