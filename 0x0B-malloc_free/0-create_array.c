@@ -5,25 +5,20 @@
 /**
  * create_array - a function that creates an array of chars,
  * and initializes it with a specific char
- *@unsigned int: array size
- *@char c: array elements
- *Return: ('\0')
+ *@size: number of bytes allocated
+ *@c: array elements
+ *Return:a pointer to the array, or (NULL) if it fails
  */
 char *create_array(unsigned int size, char c)
 {
-	int i;
+	unsigned int i;
+	char *arr;
 
-	for (c = 0; c < '\0'; c++)
-	{
-		printf("%d\n", c);
-	}
-	while (size > 0)
-	{
-		size = malloc(sizeof(char) * i);
-		i++;
-	}
-	if (i == 0)
-	{
-		return ('\0');
-	}
+	arr = malloc(sizeof(char) * size);
+	if (size == 0 || arr == NULL)
+	return (NULL);
+
+	for (i = 0; i < size; i++)
+	arr[i] = c;
+	return (arr);
 }
