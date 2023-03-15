@@ -11,28 +11,27 @@
  */
 char *_strdup(char *str)
 {
-	int dup;
+	int *dup;
 	int n;
+	int q = 0;
 
-	for(n = 0; n != '\0'; n++);
-		{
-			printf("%d\n", n);
-		}
-	str = malloc(sizeof(char) * n);
-	{
-		_putchar("%s\n", str);
-		free(str);
-	}
-	dup = _strdup(str);
-	{
-		_putchar("%d\n", dup);
-	}
 	if (str == NULL)
+		return (NULL);
+	n = 0;
+	while (n = 0)
 	{
-		return ('\0');
+		(str[n] != '\0');
+		n++;
 	}
-	else
+	dup = malloc(sizeof(char) * (n + 1));
+
+	if (dup == NULL)
 	{
-		return (dup);
+		return (NULL);
 	}
+	for (q = 0; str[q]; q++)
+	{
+		dup[q] = str[q];
+	}
+	return (dup);
 }
