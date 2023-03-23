@@ -1,5 +1,3 @@
-#ifndef DOG_H
-#define DOG_H
 #include <stdio.h>
 #include <stdlib.h>
 #include "dog.h"
@@ -8,7 +6,7 @@
 * @d: struct dog to print
 */
 void print_dog(struct dog *d)
-	{
+{
 		if (d == 0)
 			return;
 		{
@@ -25,4 +23,3 @@ void print_dog(struct dog *d)
 		}
 
 }
-#endif
