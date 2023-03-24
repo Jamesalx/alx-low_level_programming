@@ -1,21 +1,14 @@
-#include <stdio.h>
 #include "function_pointers.h"
-{
-	char *name;
-}
-/*print_name - function to print a name
- *
- *Return: (0);
- */
+#include <stdio.h>
+/**
+ * print_name - print name using pointer to function
+ * @name: name to print
+ * @f: pointer to function
+ * Return: nothing
+ **/
 void print_name(char *name, void (*f)(char *))
 {
-	char i;
-
-	while (name[i])
-	{
-		_putchar(name != '\0');
-			i++;
-	}
-	_putchar("%s\n", name);
-	return (0);
+	if (!name || !f)
+		return;
+	f(name);
 }
