@@ -1,4 +1,5 @@
 #include "3-calc.h"
+#include <stdlib.h>
 /**
  *op_add - calculates the sum of two integers
  *@a:first integer
@@ -52,4 +53,3 @@ int op_mod(int a, int b)
 {
 	return (a % b);
 }
-#endif
